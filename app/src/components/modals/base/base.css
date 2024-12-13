@@ -1,0 +1,17 @@
+.base-modal {
+  width: 100% !important;
+  height: 100% !important;
+  border-radius: 50px;
+  padding: 50px;
+
+  position: absolute;
+  z-index: 69420;
+}
+
+dialog:modal {
+  max-width: 100vw;
+}
+
+dialog:modal {
+  max-height: 100vh;
+}

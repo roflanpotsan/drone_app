@@ -1,0 +1,45 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-user-callout: none;
+  -webkit-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-modify: none;
+  -webkit-highlight: none;
+  -moz-user-select: none;
+  touch-action: none;
+  -ms-touch-action: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0 solid transparent;
+  font-family: Inter-Variable, sans-serif;
+  outline-color: #0066d3;
+}
+
+html {
+  position: fixed;
+  min-height: 100dvh;
+  height: 100dvh;
+  width: -webkit-fill-available;
+  width: -moz-fill-available;
+}
+
+body {
+  min-height: 100dvh;
+  height: 100dvh;
+  width: -webkit-fill-available;
+  width: -moz-fill-available;
+  overflow: hidden;
+}
+
+#root {
+  height: 100%;
+  width: -webkit-fill-available;
+  width: -moz-fill-available;
+}

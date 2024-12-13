@@ -1,0 +1,115 @@
+.order-card__logo {
+  aspect-ratio: 1;
+  height: 2.5em;
+}
+
+.order-card__wrapper {
+  background-color: rgb(250, 250, 250);
+  padding: 20px;
+  border-radius: 40px;
+  border: 1px #ccc solid;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 270px;
+}
+
+.order-card__info-row {
+  border: 1px #ccc solid;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.order-card__header {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: flex-start;
+  gap: 10px;
+  align-items: center;
+}
+
+.order-card__header__text {
+  word-wrap: break-word;
+}
+
+.order-card__info__text {
+  word-wrap: break-word;
+  color: gray;
+}
+
+.icon-btn {
+  padding: 50px;
+  border-radius: 20px;
+  background-color: transparent;
+  border: 1px #ccc solid;
+}
+
+.icon-btn:hover {
+  background-color: #eeeeee;
+}
+
+.icon-map {
+  background-image: url("../../../assets/map.png");
+  background-size: 70%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.icon-qr {
+  background-image: url("../../../assets/qr.png");
+  background-size: 70%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.order-card__button-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.order-card__btn {
+  padding: 10px;
+  background-color: transparent;
+  color: black;
+  border: 1px #ccc solid;
+  font-size: medium;
+}
+
+.order-card__btn:hover {
+  background-color: #eeeeee;
+}
+
+.color-process {
+  color: rgb(226, 139, 0);
+}
+
+.color-ok {
+  color: rgb(0, 168, 64);
+}
+
+.color-fail {
+  color: rgb(227, 67, 67);
+}
+
+/* HTML: <div class="loader"></div> */
+.loader {
+  width: 40px;
+  aspect-ratio: 1;
+  background: #000;
+  animation: l1 1s infinite;
+}
+@keyframes l1 {
+  0% {
+    transform: perspective(150px) rotateX(0deg);
+  }
+  100% {
+    transform: perspective(150px) rotateX(180deg);
+  }
+}

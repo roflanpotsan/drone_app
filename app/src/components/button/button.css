@@ -1,0 +1,26 @@
+.btn {
+  border: none;
+  outline: none;
+  padding: 20px;
+
+  background-color: #007bff;
+  color: white;
+  font-size: large;
+
+  border-radius: 100px;
+  cursor: pointer;
+
+  transition: all 0.2s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #0066d3;
+}
+
+.btn-cancel {
+  background-color: rgb(255, 73, 73);
+}
+
+.btn-cancel:hover {
+  background-color: rgb(200, 43, 43);
+}

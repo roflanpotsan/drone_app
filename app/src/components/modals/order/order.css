@@ -1,0 +1,76 @@
+.modal__order__text-header {
+  font-size: large;
+  color: black;
+}
+
+.modal__order__text-info {
+  font-size: medium;
+  font-style: italic;
+  color: gray;
+}
+
+.modal__order__wrapper {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.modal__order__text-wrap {
+  display: flex;
+  width: 100%;
+  height: auto;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.modal__order__block-wrap {
+  display: flex;
+  width: 100%;
+  height: 100%;
+
+  flex-direction: column;
+  gap: 10px;
+}
+
+.modal__order__input {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.modal__order__button-wrap {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: auto;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.modal__order__map {
+  width: 100%;
+  display: block;
+}
+
+.modal__order__input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  font-size: 16px;
+  text-align: left;
+  cursor: pointer;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
