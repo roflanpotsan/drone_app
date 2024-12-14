@@ -65,14 +65,11 @@ export default function Home() {
 
   const fetchOrderStatus = async () => {
     try {
-      const response = await fetch(
-        `https://7d61-5-228-4-0.ngrok-free.app/orders/status/${userID}`,
-        {
-          headers: new Headers({
-            "ngrok-skip-browser-warning": "69420",
-          }),
-        }
-      );
+      const response = await fetch(`${API_URL}/orders/status/${userID}`, {
+        headers: new Headers({
+          "ngrok-skip-browser-warning": "69420",
+        }),
+      });
       if (response.ok) {
         setOrderExists(true);
         return;
