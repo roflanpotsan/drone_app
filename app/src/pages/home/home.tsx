@@ -7,6 +7,7 @@ import OrderModal from "../../components/modals/order/order";
 import OrderCard from "../../components/orderCard/orderCard";
 import { useLocation } from "@solidjs/router";
 import { v4 as uuidv4 } from "uuid";
+import { API_URL } from "../../settings";
 
 interface orderData {
   lat: number;
@@ -38,17 +39,14 @@ export default function Home() {
   const createOrder = async ({ lat, lng, alt }: orderData) => {
     console.log(lat, lng, alt);
     try {
-      const response = await fetch(
-        `https://7d61-5-228-4-0.ngrok-free.app/orders/${userID}`,
-        {
-          method: "POST",
-          body: JSON.stringify({ lat: lat, lon: lng, alt: alt }),
-          headers: new Headers({
-            "ngrok-skip-browser-warning": "69420",
-            "Content-Type": "application/json",
-          }),
-        }
-      );
+      const response = await fetch(`${API_URL}/orders/${userID}`, {
+        method: "POST",
+        body: JSON.stringify({ lat: lat, lon: lng, alt: alt }),
+        headers: new Headers({
+          "ngrok-skip-browser-warning": "69420",
+          "Content-Type": "application/json",
+        }),
+      });
       if (!response.ok) throw new Error("Failed to create order");
       const taskId = await response.text();
       console.log("Order created, task ID:", taskId);

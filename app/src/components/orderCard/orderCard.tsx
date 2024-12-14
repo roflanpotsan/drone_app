@@ -5,6 +5,7 @@ import MapModal from "../modals/map/map";
 import ProductImg from "../../../assets/product.png";
 import Button from "../button/button";
 import { createEffect, createSignal, onCleanup } from "solid-js";
+import { API_URL } from "../../settings";
 
 const STATUS = {
   none: "Ожидание",
@@ -51,14 +52,11 @@ export default function OrderCard({ processClose, userID }: any) {
   createEffect(() => {
     const fetchOrderStatus = async () => {
       try {
-        const response = await fetch(
-          `https://7d61-5-228-4-0.ngrok-free.app/orders/status/${userID}`,
-          {
-            headers: new Headers({
-              "ngrok-skip-browser-warning": "69420",
-            }),
-          }
-        );
+        const response = await fetch(`${API_URL}/orders/status/${userID}`, {
+          headers: new Headers({
+            "ngrok-skip-browser-warning": "69420",
+          }),
+        });
         if (!response.ok) {
           if (response.status === 404) {
             console.error("Order not found.");
