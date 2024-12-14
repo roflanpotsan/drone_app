@@ -100,7 +100,7 @@ const MapComponent = (props: MapComponentProps) => {
           const coords: Coordinates = {
             lat: latitude,
             lng: longitude,
-            alt: altitude || 100, // Altitude may be null, so provide a default value
+            alt: altitude || 170, // Altitude may be null, so provide a default value
           };
 
           if (marker()) {

@@ -48,5 +48,8 @@ module.exports = {
     static: "./dist",
     port: 1337,
     historyApiFallback: true, // Enables SPA URL handling
+    client: {
+      overlay: false,
+    },
   },
 };

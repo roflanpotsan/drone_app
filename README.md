@@ -12,6 +12,5 @@ npx webpack serve
 Ссылки на backend менять в:
 
 ```
-/app/src/pages/home/home.tsx
-/app/src/components/orderCard/orderCard.tsx
+/app/src/settings.ts
 ```
